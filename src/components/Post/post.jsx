@@ -6,7 +6,7 @@ export default function Post() {
             <img className="postImg" src="https://www.pcrm.org/sites/default/files/plant-based-foods-fight-menstrual-pain.jpg" alt="img" />
             <div className="postInfo">
                 <div className="postCats">
-                    <span className="postCat">Music</span>
+                    <span className="postCat">food</span>
                     <span className="postCat">Life</span>
                 </div>
                 <span className="postTitle">Lorem, ipsum dolor sit amet .</span>
