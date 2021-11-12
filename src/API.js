@@ -1,6 +1,6 @@
 import React from "react";
 import "./API.css";
-import { client } from "./client";
+import  client  from "./client";
 import Posts from "./Posts";
 
 class Api extends React.Component {
