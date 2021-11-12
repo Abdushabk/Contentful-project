@@ -1,15 +1,17 @@
 import React from 'react';
-import Post from "../../Post/Post"
+import Post from "../../Post/post"
 
 const Breakfast = ({breakfast}) => {
     return (
-        /* <div>
+        <>
+        {/* <div>
              {breakfast.map((item, index) => <Post item={item} key={index}/>)}
-        </div> */
+        </div>  */}
         <div>
            
             <Post breakfast={breakfast}/>
         </div>
+        </>
     )
 }
 

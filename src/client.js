@@ -6,4 +6,4 @@ const client = contentful.createClient ({
 })
 
 
-export default client
+export default client;

@@ -1,19 +1,30 @@
+import { useEffect , useState} from 'react'
+import { Link } from 'react-router-dom';
+import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import './post.css'
 
-export default function Post({breakfast}) {
+export default function Post({post}) {
+    const [postToHTML, setPostToHTML] = useState('')
+  
+    useEffect(()=>{
+        setPostToHTML(documentToHtmlString(post.fields.recipe))
+    },[post])
+
     return (
         <div className="post">
-            <img className="postImg" src="https://www.pcrm.org/sites/default/files/plant-based-foods-fight-menstrual-pain.jpg" alt="img" />
+        <img className="postImg" src={post.fields.headImg.fields.file.url} alt="img" />
             <div className="postInfo">
                 <div className="postCats">
                     <span className="postCat">food</span>
                     <span className="postCat">Life</span>
                 </div>
-                <span className="postTitle">{breakfast}</span>
+                <Link to={`/recipe/${post.sys.id}`}>
+                <span className="postTitle">{post.fields.title}</span>
+                </Link>
                 <hr />
                 <span className="postDate"></span>
             </div>
-            <p className="postDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni error repellendus perferendis quasi aut cumque maxime maiores totam officia sed praesentium voluptatum eveniet magnam commodi at, autem quos odio!Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni error repellendus perferendis quasi aut cumque maxime maiores totam officia sed praesentium voluptatum eveniet magnam commodi at, autem quos odio!Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde magni error repellendus perferendis quasi aut cumque maxime maiores totam officia sed praesentium voluptatum eveniet magnam commodi at, autem quos odio!</p>
+        {/*     <p className="postDesc" dangerouslySetInnerHTML={{__html: postToHTML}}></p> */}
         </div>
     )
 }

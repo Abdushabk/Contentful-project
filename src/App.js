@@ -4,8 +4,10 @@ import NavbarTop from './components/NavbarTop';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from './components/pages/home/Home';
 import client from "./client.js";
-import { HashRouter as Router, Route, Routes } from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
+import MealTime from './components/pages/MealTime';
 import Breakfast from "./components/pages/breakfast/Breakfast";
+import SingleRecipe from './components/SingleRecipe';
 import Lunch from "./components/pages/lunch/Lunch";
 import Dinner from "./components/pages/dinner/Dinner"
 import Dessert from "./components/pages/dessert/Dessert"
@@ -14,7 +16,7 @@ function App() {
 
   const [breakfast, setBreakfast] = useState([]);
 
-  //get-Request für die Breakfast-recipies
+/*   //get-Request für die Breakfast-recipies
   useEffect(() => {
     client
       .getEntries({content_type:"breakfast"})
@@ -27,25 +29,21 @@ function App() {
   }, [])
 //get-request successful; console log of breakfast gets array with 4 recipies
   console.log(breakfast)
-  console.log(breakfast[0].fields.title)
+  // console.log(breakfast[0].fields.title)
 
 //Problem: breakfast.field.title etc. is not working!!!!   
       //console.log(breakfast.fields.title)
-
+ */
   
   return (
     <>
-      <Router>
         <NavbarTop/>
 
         <Routes>
             <Route exact path="/" element={<Home />}/>
-            <Route exact path="/breakfast" element={<Breakfast breakfast={breakfast}/>}/>
-            <Route exact path="/lunch" element={<Lunch/>}/>
-            <Route exact path="/dinner" element={<Dinner/>}/>
-            <Route exact path="/dessert" element={<Dessert/>}/>
+            <Route exact path="/:mealtime" element={<MealTime />}/>
+             <Route exact path="/recipe/:id" element={<SingleRecipe />}/>
         </Routes>
-      </Router>
     </>
   );
 }

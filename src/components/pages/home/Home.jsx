@@ -1,5 +1,5 @@
+import { Link } from 'react-router-dom'
 import Header from '../../header/Header'
-import Posts from '../../Posts/Posts'
 import './home.css'
 
 export default function Home() {
@@ -7,8 +7,11 @@ export default function Home() {
         <>
             <Header/>
             <div>
-                <Posts/>
+<Link to='/breakfast'>
+    dadas
+</Link>
             </div>
         </>
     )
 }
+    
