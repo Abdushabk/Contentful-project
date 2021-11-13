@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import './post.css'
 
-export default function Post({post}) {
+export default function Post({post, handleClearQry}) {
     const [postToHTML, setPostToHTML] = useState('')
   
     useEffect(()=>{
@@ -18,7 +18,7 @@ export default function Post({post}) {
                     <span className="postCat">food</span>
                     <span className="postCat">Life</span>
                 </div>
-                <Link to={`/recipe/${post.sys.id}`}>
+                <Link to={`/recipe/${post.sys.id}`} onClick={handleClearQry}>
                 <span className="postTitle">{post.fields.title}</span>
                 </Link>
                 <hr />
