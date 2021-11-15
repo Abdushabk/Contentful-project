@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './as.css'
 
 const Post = ({ article }) => {
     console.log(article)

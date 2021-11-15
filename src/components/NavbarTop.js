@@ -19,7 +19,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
           >
             <ul>
               <NavLink  to="/" onClick={handleClearQry} style={{listStyle: "none"
-            ,textDecoration: "none", marginLeft: "100px"}}>
+            ,textDecoration: "none", marginLeft: "90px"}}>
                 <li>HOME</li>
               </NavLink>
             </ul>
