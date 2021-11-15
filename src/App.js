@@ -9,6 +9,10 @@ import Home from "./components/pages/home/Home";
 import MealTime from "./components/pages/MealTime";
 import SingleRecipe from "./components/SingleRecipe";
 import SearchMeals from "./components/pages/SearchMeals";
+import Posts from "./components/Posts/Posts";
+
+
+
 
 //import client from "./client.js";
 //import Breakfast from "./components/pages/breakfast/Breakfast";
@@ -56,6 +60,7 @@ function App() {
         handleSearchClick={handleSearchClick}
         handleClearQry={handleClearQry}
       />
+      
       {searchQry ? (
         <SearchMeals searchQry={searchQry} handleClearQry={handleClearQry} />
       ) : (
@@ -65,7 +70,9 @@ function App() {
           <Route exact path="/recipe/:id" element={<SingleRecipe />} />
         </Routes>
       )}
+      
     </>
+   
   );
 }
 

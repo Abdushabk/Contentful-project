@@ -2,6 +2,7 @@ import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
+
 const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
   return (
     <ReactBootStrap.Navbar bg="light" expand="lg" sticky="top">

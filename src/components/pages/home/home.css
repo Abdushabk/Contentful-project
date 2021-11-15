@@ -1,3 +1,5 @@
-.home{
+.card{
     display: flex;
+    margin: 100px;
+    height: 200px;
 }
