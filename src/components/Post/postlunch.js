@@ -6,7 +6,7 @@ export default function Post2() {
     <div className="post">
       <img
         className="postImg"
-        src="https://ychef.files.bbci.co.uk/1600x900/p04tx3m6.webp"
+        src="https://img.taste.com.au/45Y4XB7k/w1200-h630-cfill/taste/2018/02/barbecued-chicken-rice-bowls-taste-135064-1.jpg"
         alt=""
       />
       <div className="postInfo">

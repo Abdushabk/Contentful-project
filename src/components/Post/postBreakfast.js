@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import "./post.css";
 
-export default function Post4() {
+export default function Post1() {
   return (
     <div className="post">
       <img
         className="postImg"
-        src="https://ychef.files.bbci.co.uk/1600x900/p04tx3m6.webp"
+        src="https://www.iheartberlin.de/wp-content/uploads/2020/12/Benedict-Berlin-Classic-Box_1800x1800-1080x675.jpg"
         alt=""
       />
       <div className="postInfo">

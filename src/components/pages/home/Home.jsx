@@ -12,7 +12,7 @@ import './home.css'
 export default function Home() {
     return (
         <>
-            {/* <Header/> */}
+            <Header/> 
             <div>
 <Link to='/breakfast'>
     
