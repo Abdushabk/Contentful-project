@@ -7,7 +7,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
   return (
     <ReactBootStrap.Navbar bg="light" expand="lg" sticky="top">
       <ReactBootStrap.Container fluid>
-        <ReactBootStrap.Navbar.Brand href="#" onClick={handleClearQry}>
+        <ReactBootStrap.Navbar.Brand href="/" onClick={handleClearQry}>
           AVC Food Blog
         </ReactBootStrap.Navbar.Brand>
         <ReactBootStrap.Navbar.Toggle aria-controls="navbarScroll" />
@@ -19,7 +19,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
           >
             <ul>
               <NavLink  to="/" onClick={handleClearQry} style={{listStyle: "none"
-            ,textDecoration: "none", marginLeft: "90px"}}>
+            ,textDecoration: "none", marginLeft: "90px",color: "inherit"}}>
                 <li>HOME</li>
               </NavLink>
             </ul>
