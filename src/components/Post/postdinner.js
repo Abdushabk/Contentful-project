@@ -6,24 +6,18 @@ export default function Post3() {
     <div className="post">
       <img
         className="postImg"
-        src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/high-protein-dinners-slow-cooker-meatballs-image-5a04d02.jpg?quality=90&resize=500,454"
-        alt=""
+        src="https://images.pexels.com/photos/3026808/pexels-photo-3026808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+        alt="Dinner"
       />
       <div className="postInfo">
-        <div className="postCats">
-         
-        </div>
+        <div className="postCats"></div>
         <span className="postTitle">
           <Link to="/blog" className="link">
             Dinner
           </Link>
         </span>
-        <hr />
-        
+        <p>We all know that families should eat together, but sometimes it’s tough to find the time. Work, school, sports practices and other obligations all seem to get in the way. But studies show that families who dine at home together are happier and healthier.</p>
       </div>
-      <p className="postDesc">
-        
-      </p>
     </div>
   );
 }

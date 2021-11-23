@@ -9,7 +9,7 @@ import Home from "./components/pages/home/Home";
 import MealTime from "./components/pages/MealTime";
 import SingleRecipe from "./components/SingleRecipe";
 import SearchMeals from "./components/pages/SearchMeals";
-import Posts from "./components/Posts/Posts";
+
 
 
 

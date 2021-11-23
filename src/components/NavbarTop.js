@@ -2,7 +2,6 @@ import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-
 const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
   return (
     <ReactBootStrap.Navbar bg="light" expand="lg" sticky="top">
@@ -17,12 +16,20 @@ const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <ul>
-              <NavLink  to="/" onClick={handleClearQry} style={{listStyle: "none"
-            ,textDecoration: "none", marginLeft: "90px",color: "inherit"}}>
-                <li>HOME</li>
-              </NavLink>
-            </ul>
+            <ReactBootStrap.NavLink
+              to="/"
+              onClick={handleClearQry}
+              style={{
+                listStyle: "none",
+                textDecoration: "none",
+                marginLeft: "15px",
+                marginRight: "20px",
+                color: "inherit",
+              }}
+            >
+              <li>HOME</li>
+            </ReactBootStrap.NavLink>
+
             <ReactBootStrap.NavDropdown
               title="Sections"
               id="navbarScrollingDropdown"
@@ -41,7 +48,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
                 <li>Dessert</li>
               </NavLink>
             </ReactBootStrap.NavDropdown>
-            <ReactBootStrap.Nav.Link href="#" disabled onClick={handleClearQry}>
+            <ReactBootStrap.Nav.Link href="/" onClick={handleClearQry}>
               Contact Us
             </ReactBootStrap.Nav.Link>
           </ReactBootStrap.Nav>

@@ -1,0 +1,43 @@
+.listCont {
+  display: flex;
+}
+
+.ul {
+  background-color: white;
+  width: 600px;
+  color: darkslategrey;
+  list-style: none;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 100px;
+  overflow-x: scroll;
+  line-height: 30px;
+  font-weight: bolder;
+  font-family: "lora", serif;
+  /* box-shadow: 2.5px 5px 9px  rgb(48, 47, 47); */
+}
+.ul1 {
+  background-color: darkslategrey;
+  color: white;
+  list-style: none;
+  position: relative;
+  margin-top: 40px;
+  margin-left: 350px;
+  line-height: 30px;
+  font-weight: bolder;
+  padding: 25px;
+  padding-top: 100px;
+  font-family: "lora", serif;
+  box-shadow: 2.5px 5px 9px  rgb(48, 47, 47);
+}
+
+.ftImg {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  position: absolute;
+}
+
+li {
+  text-align: center;
+}
