@@ -1,5 +1,6 @@
 .listCont {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .ul {
@@ -28,7 +29,7 @@
   padding: 25px;
   padding-top: 100px;
   font-family: "lora", serif;
-  box-shadow: 2.5px 5px 9px  rgb(48, 47, 47);
+  box-shadow: 2.5px 5px 9px rgb(48, 47, 47);
 }
 
 .ftImg {
@@ -38,6 +39,4 @@
   position: absolute;
 }
 
-li {
-  text-align: center;
-}
+

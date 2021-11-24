@@ -12,11 +12,13 @@
     "react": "^17.0.2",
     "react-bootstrap": "^2.0.2",
     "react-dom": "^17.0.2",
+    "react-icons": "^4.3.1",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2",
     "webpack": "^4.44.2"
   },
+  "homepage": "https://abdushabk.github.io/Contentful-project",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
