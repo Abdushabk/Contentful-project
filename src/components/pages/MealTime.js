@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Post from "../Post/post";
 import client from "../../client.js";
-import './MealTime.css'
+
 
 const MealTime = () => {
   const { mealtime } = useParams();
@@ -16,6 +16,7 @@ const MealTime = () => {
       .then(({ items, total }) => {
         setPosts(items);
         setTotal(total);
+        console.log(items)
       })
       .catch(() => {
         setError("Oops! We do not have any posts for this category");

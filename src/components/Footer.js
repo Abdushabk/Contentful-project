@@ -25,8 +25,12 @@ const Footer = () => {
         </ul>
         <ul className="ul1">
           <li>Abdullah</li>
-          <li>Victor</li>
           <li>Carina</li>
+          <li>Victor</li>
+        </ul>
+
+        <ul>
+          <li></li>
         </ul>
       </div>
     </>

@@ -60,7 +60,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
               aria-label="Search"
             />
             <ReactBootStrap.Button
-              variant="outline-success"
+              variant="outline-dark"
               onClick={(e) => handleSearchClick(e)}
             >
               {""}
