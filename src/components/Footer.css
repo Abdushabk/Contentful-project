@@ -1,6 +1,12 @@
 .listCont {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+}
+
+.ul2{
+  margin-top: 100px;
+  position: relative;
+  list-style: none;
 }
 
 .ul {
@@ -10,7 +16,7 @@
   list-style: none;
   position: relative;
   margin-top: 40px;
-  margin-left: 100px;
+  /* margin-left: 100px; */
   overflow-x: scroll;
   line-height: 30px;
   font-weight: bolder;
@@ -18,12 +24,13 @@
   /* box-shadow: 2.5px 5px 9px  rgb(48, 47, 47); */
 }
 .ul1 {
+  text-align: center;
   background-color: darkslategrey;
   color: white;
   list-style: none;
   position: relative;
   margin-top: 40px;
-  margin-left: 350px;
+  /* margin-left: 350px; */
   line-height: 30px;
   font-weight: bolder;
   padding: 25px;

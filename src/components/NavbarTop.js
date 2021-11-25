@@ -18,6 +18,7 @@ const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
           >
             <ReactBootStrap.NavLink
               to="/"
+              href="/"
               onClick={handleClearQry}
               style={{
                 listStyle: "none",

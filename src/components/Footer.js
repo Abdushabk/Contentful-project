@@ -1,6 +1,6 @@
 import React from "react";
+import { FaFacebook,FaGithub,FaInstagram,FaDiscord } from "react-icons/fa";
 import "./Footer.css";
-
 const Footer = () => {
   return (
     <>
@@ -29,8 +29,11 @@ const Footer = () => {
           <li>Victor</li>
         </ul>
 
-        <ul>
-          <li></li>
+        <ul className="ul2">
+          <li><FaFacebook size="2.5em" /></li>
+          <li><FaGithub size="2.5em" /></li>
+          <li><FaInstagram size="2.5em" /></li>
+          <li><FaDiscord size="2.5em" /></li>
         </ul>
       </div>
     </>
