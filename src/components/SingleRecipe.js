@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { documentToHtmlString } from "@contentful/rich-text-html-renderer";
 import client from "../client.js";
+import "./SingleRecipe.css";
 
 const SingleRecipe = () => {
     const { id } = useParams();
@@ -41,13 +42,22 @@ const SingleRecipe = () => {
     if (error) return <div>{error}</div>;
 
     return (
-        <div>
+        <div className="recipes">
             {singleRecipe.map(item => (
                 <div>
-                    <div>{item.fields.title}</div>
-                    <div>{item.fields.date}</div>
-                    <div>{item.fields.description}</div>
+                    <div className= "title"><h2>{item.fields.title}</h2></div>
+
+                    <div className="img-recipe">
                     <img src={item.fields.headImg.fields.file.url} alt="img" />
+                    </div>
+
+                    <div className= "date">{item.fields.date}</div>
+
+                    <div className= "description"><p>{item.fields.description}</p></div>
+                   
+                   
+                   
+
                 </div>
             ))}
         </div>
