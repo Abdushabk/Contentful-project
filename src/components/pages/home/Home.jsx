@@ -1,9 +1,13 @@
 import { Link } from 'react-router-dom'
 
 import Header from '../../header/Header'
+// eslint-disable-next-line
 import Post4 from '../../Post/postBreakfast'
+// eslint-disable-next-line
 import Post3 from '../../Post/postdessert'
+// eslint-disable-next-line
 import Post1 from '../../Post/postdinner'
+// eslint-disable-next-line
 import Post2 from '../../Post/postlunch'
 import Posts from '../../Posts/Posts'
 

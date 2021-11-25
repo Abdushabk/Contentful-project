@@ -1,4 +1,5 @@
 import './posts.css'
+// eslint-disable-next-line
 import Post from '../Post/post'
 import Post1 from '../Post/postdinner'
 import Post2 from '../Post/postlunch'

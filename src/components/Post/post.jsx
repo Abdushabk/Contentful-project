@@ -4,6 +4,7 @@ import { documentToHtmlString } from '@contentful/rich-text-html-renderer';
 import './post.css'
 
 export default function Post({post, handleClearQry}) {
+    // eslint-disable-next-line
     const [postToHTML, setPostToHTML] = useState('')
   
     useEffect(()=>{
