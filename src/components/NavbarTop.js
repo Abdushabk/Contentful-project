@@ -2,7 +2,12 @@ import React from "react";
 import * as ReactBootStrap from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 
-const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
+const NavbarTop = ({ handleSearchClick, handleClearQry, categories }) => {
+  let subMenu = [];
+  categories.map((element) => {
+    subMenu.push(element.name);
+  });
+  console.log(subMenu);
   return (
     <ReactBootStrap.Navbar bg="light" expand="lg" sticky="top">
       <ReactBootStrap.Container fluid>
@@ -35,13 +40,16 @@ const NavbarTop = ({ handleSearchClick, handleClearQry }) => {
               title="Sections"
               id="navbarScrollingDropdown"
             >
+              {/* {for (let index = 0; index < subMenu.length; index++) {
+                <NavLink to={subMenu(index)} onClick={handleClearQry}>{subMenu(index)}</NavLink>
+              }} */}
+
               <NavLink to="/breakfast" onClick={handleClearQry}>
                 <li>Breakfast</li>
               </NavLink>
               <NavLink to="/lunch" onClick={handleClearQry}>
                 <li>Lunch</li>
               </NavLink>
-              {/* this should be "/dinner" */}
               <NavLink to="/blog" onClick={handleClearQry}>
                 <li>Dinner</li>
               </NavLink>

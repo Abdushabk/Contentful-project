@@ -8,7 +8,7 @@ export default function Post({ post, handleClearQry }) {
   const [postToHTML, setPostToHTML] = useState("");
 
   useEffect(() => {
-    setPostToHTML(documentToHtmlString(post.fields.recipe));
+    setPostToHTML(documentToHtmlString(post.recipe));
   }, [post]);
 
   return (
@@ -16,13 +16,14 @@ export default function Post({ post, handleClearQry }) {
       <div className="imgCon">
         <img
           className="postImg"
-          src={post.fields.headImg.fields.file.url}
+          // src={post.fields.headImg.fields.file.url}
+          src={post.image}
           alt="img"
         />
       </div>
       <div className="postInfo">
-        <Link to={`/recipe/${post.sys.id}`} onClick={handleClearQry}>
-          <span className="postTitle">{post.fields.title}</span>
+        <Link to={`/recipe/${post.slug}`} onClick={handleClearQry}>
+          <span className="postTitle">{post.title}</span>
         </Link>
         <hr />
         <span className="postDate"></span>
